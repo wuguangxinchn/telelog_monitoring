@@ -1,0 +1,26 @@
+{
+  "model": {
+    "period": "30",
+    "threshold": {
+      "warning": {
+        "records": "0.1",
+        "sessions": "0.1",
+        "vins": "0.1"
+      },
+      "error": {
+        "records": "0.25",
+        "sessions": "0.25",
+        "vins": "0.25"
+      }
+    }
+  },
+  "email": {
+    "strTo": "",
+    "strCc": "",
+    "strSubJect": "[Automated Notification] Telelog Data Ingestion Status",
+    "strStatNormal": "Data Normal - there are no anomalies detected in the incoming data.",
+    "strStatWarning": "Data Warning - the data processed yesterday falls more than 10% outside of the expected volume. Potential issue that should be checked.",
+    "strStatError": "Data Error - the data processed yesterday falls more than 25% outside of the expected volume. There is almost certainly an issue that needs to be investigated.",
+    "strMsgText": "Dear Datalake Administrator(s) / people who care about Telelog, \n\n{} \nPlease find attached the Telelog ingestion status for the last 7 days! \nThis is an automated e-mail but for any questions please feel free to reach out directly!"
+  }
+ }
